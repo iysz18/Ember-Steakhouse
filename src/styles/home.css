@@ -1,11 +1,36 @@
 /* CSS STYLING FOR THE HOME TAB */
-
+:root {
+    /* hero font styling */
+    --hero-fc: #ffffff;
+    --hero-fs: 4rem;
+    --hero-sub-fs: 1.5rem;
+}
 
 .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
     height: 100vh;
     width: 100vw;
     background: url("../assets/images/home-bg.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.heroStr {
+    font-size: var(--hero-fs);
+}
+
+.subStr {
+    font-size: var(--hero-sub-fs);
+    font-weight: 500;
+}
+
+.heroStr, .subStr {
+    text-align: center;
+    color: var(--hero-fc);
+    margin-block: 5px;
 }
