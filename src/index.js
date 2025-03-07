@@ -1,4 +1,5 @@
-// index.js
-import { greeting } from "./modules/greeting";
+// imports from npm
+import "normalize.css"
 
-console.log(greeting);
+// imports from "src/modules"
+import renderHome from "./modules/home.js"
