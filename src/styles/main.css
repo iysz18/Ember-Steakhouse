@@ -1,0 +1,29 @@
+/* MAIN CSS */
+
+:root {
+    /* font styling */
+    --nav-logo-fs: 42px;
+    --nav-logo-color: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* nav styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    padding: 0px 20px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+nav .logo {
+    font-size: var(--nav-logo-fs);
+    color: var(--nav-logo-color);
+}
