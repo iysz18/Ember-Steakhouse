@@ -6,9 +6,10 @@ body {
 :root {
     /* navbar structure & font styling */
     --nav-logo-fs: 42px;
-    --nav-logo-color: #ffffff;
+    --nav-text-color: #f37575;
     --nav-height: 100px;
     --nav-width: 100vw;
+    --nav-padding-size: 0px 100px;
 }
 
 * {
@@ -24,12 +25,18 @@ nav {
     height: var(--nav-height);
     position: absolute;
     z-index: 1;
-    padding: 0px 20px;
-    background-color: rgba(0, 0, 0, 0);
+    padding: var(--nav-padding-size);
 }
 
 nav .logo {
     font-size: var(--nav-logo-fs);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: var(--nav-logo-color);
+    color: var(--nav-text-color);
+}
+
+nav button {
+    font-size: 22px;
+    color: var(--nav-text-color);
+    background: none;
+    border: none;
 }
