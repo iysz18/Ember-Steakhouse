@@ -1,5 +1,6 @@
 // imports from npm
 import "normalize.css"
+import "./styles/main.css"
 
 // imports from "src/modules"
 import renderHome from "./modules/home.js"
@@ -7,6 +8,9 @@ import renderHome from "./modules/home.js"
 // generate the content of the page when DOM loaded
 document.addEventListener("DOMContentLoaded", () => {
     const mainContent = document.querySelector("#content");
+
+    // set home tab as default opened tab
+    mainContent.appendChild(renderHome());
 
     // reference each tab button in navbar in a nodelist
     // then add to each button in the nodelist the eventlistener "click"
@@ -22,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     mainContent.appendChild(renderHome());
                     break;
                 case "menuBtn":
-                    alert("menuuuu");
+                    mainContent.innerHTML = null;
                     break;
             }
         });
