@@ -1,9 +1,14 @@
 /* MAIN CSS */
 
+body {
+  font-family: 'Staatliches', sans-serif;
+}
 :root {
-    /* font styling */
+    /* navbar structure & font styling */
     --nav-logo-fs: 42px;
     --nav-logo-color: #ffffff;
+    --nav-height: 100px;
+    --nav-width: 100vw;
 }
 
 * {
@@ -15,8 +20,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
-    height: auto;
+    width: var(--nav-width);
+    height: var(--nav-height);
     position: absolute;
     z-index: 1;
     padding: 0px 20px;
@@ -25,5 +30,6 @@ nav {
 
 nav .logo {
     font-size: var(--nav-logo-fs);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: var(--nav-logo-color);
 }
